@@ -160,6 +160,10 @@ margin-bottom: -20px;
   }
 }
 @media only screen and (max-width: 380px){
+  .card,
+  .card2 {
+    max-width: 100%;
+  }
   .search button{
     height: 35px;
     width: 35px;
