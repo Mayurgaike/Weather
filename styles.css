@@ -185,9 +185,30 @@ margin-bottom: -20px;
 }
 @media only screen and (max-width: 380px){
   #loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #6ec2ff;
+    z-index: 9999;
+  }
+  
+  .card2 {
+    width: 100%;
+    max-width: none;
+    margin: 0;
     text-align: center;
+    background-color: #6ec2ff;
+    border-radius: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    max-height: none;
   }
   .search button{
     height: 35px;
@@ -214,9 +235,30 @@ margin-bottom: -20px;
 }
 @media only screen and (max-width: 430px){
   #loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #6ec2ff;
+    z-index: 9999;
+  }
+  
+  .card2 {
+    width: 100%;
+    max-width: none;
+    margin: 0;
     text-align: center;
+    background-color: #6ec2ff;
+    border-radius: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    max-height: none;
   }
   .search button{
     height: 40px;
