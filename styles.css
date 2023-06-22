@@ -120,11 +120,25 @@ margin-bottom: -20px;
   height: 735px;
   max-height: 735.28px;
 }
-
-@media only screen and (max-width: 768px) {
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  #loading-screen {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 767px) {
   .card,
   .card2 {
     max-width: 90%;
+  }
+  #loading-screen {
+    overflow: hidden;
   }
 }
 
@@ -163,6 +177,10 @@ margin-bottom: -20px;
   .card,
   .card2 {
     max-width: 100%;
+    
+  }
+  .card2{
+    background-size: cover;
   }
   .search button{
     height: 35px;
@@ -170,6 +188,38 @@ margin-bottom: -20px;
   }
   .search input{
     height: 35px;
+  }
+  
+  .col-p{
+    font-size: 10px;
+  }
+  .humidity,
+  .wind {
+    font-size: 22px;
+    
+  }
+  #wind-img{
+    margin-left: 20px;
+  }
+  #humidity-img{
+    margin-left: -20px;
+  }
+}
+@media only screen and (max-width: 430px){
+  .card,
+  .card2 {
+    max-width: 100%;
+  }
+  .card2{
+    background-size: cover;
+    max-height: 100%;
+  }
+  .search button{
+    height: 40px;
+    width: 50px;
+  }
+  .search input{
+    height: 40px;
   }
   
   .col-p{
