@@ -185,7 +185,9 @@ margin-bottom: -20px;
 }
 @media only screen and (max-width: 380px){
   #loading-screen {
-    margin-top: -70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .search button{
     height: 35px;
@@ -212,7 +214,9 @@ margin-bottom: -20px;
 }
 @media only screen and (max-width: 430px){
   #loading-screen {
-    margin-top: -70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .search button{
     height: 40px;
