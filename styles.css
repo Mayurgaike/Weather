@@ -9,11 +9,13 @@ body {
 .card {
   width: 90%;
   max-width: 470px;
-  margin: 100px auto 0;
+  margin: 70px auto 0;
   text-align: center;
   background-color: #6ec2ff;
   border-radius: 20px;
   padding: 40px 35px;
+  font-family: 'Poppins', sans-serif;
+  display: none;
 }
 .search {
   display: flex;
@@ -99,4 +101,20 @@ margin-bottom: -20px;
   font-size: 14px;
   margin-top: 10px;
   display: none;
+}
+.text{
+  font-size: 48px;
+}
+.card2 {
+  width: 90%;
+  max-width: 470px;
+  margin: 70px auto 0;
+  text-align: center;
+  background-color: #6ec2ff;
+  border-radius: 20px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: 'Poppins', sans-serif;
+  height: 735px;
+  max-height: 735.28px;
 }

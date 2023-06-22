@@ -8,6 +8,14 @@
     <link rel="script" href="script.js" />
   </head>
   <body>
+    <div id="loading-screen">
+      <div class="card2">
+        <div class="screen">
+         <img src="Images/clouds.png" width="300" height="300px">   
+        </div>
+        <h1 class="text">WEATHER</h1>
+    </div>
+    </div>
     <div class="card">
       <div class="search">
         <input type="text" placeholder="Enter the city" spellcheck="false" />
@@ -43,6 +51,16 @@
       </div>
     </div>
     <script>
+      document.addEventListener("DOMContentLoaded",function(event){
+        setTimeout(function(){
+          var loadingScreen = document.getElementById("loading-screen");
+          loadingScreen.style.display = "none";
+
+          var content = document.getElementsByClassName("card")[0];
+          content.style.display = "block";
+        }, 2500);
+      });
+
       const apiKey = "7cd8daa52e2045fdf442706f60e0c21b";
       const apiUrl =
         "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
