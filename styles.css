@@ -24,7 +24,7 @@ body {
 .card2 {
   width: 90%;
   max-width: 470px;
-  margin: 20px auto;
+  margin: 70px auto;
   text-align: center;
   background-color: #6ec2ff;
   border-radius: 20px;
@@ -156,7 +156,6 @@ body {
   .card,
   .card2 {
     width: 90%;
-    max-width: 470px;
     margin: 20px auto;
     border-radius: 20px;
     padding: 20px;
