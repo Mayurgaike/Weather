@@ -22,15 +22,14 @@ body {
 }
 
 .card2 {
-  width: 100%;
-  margin: 0;
+  width: 90%;
+  max-width: 470px;
+  margin: 20px auto;
   text-align: center;
   background-color: #6ec2ff;
-  border-radius: 0;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  border-radius: 20px;
+  padding: 40px 35px;
   font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
 }
 
 #loading-screen {
@@ -40,6 +39,10 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-color: #6ec2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search {
@@ -150,7 +153,8 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .card {
+  .card,
+  .card2 {
     width: 100%;
     max-width: none;
     border-radius: 0;
