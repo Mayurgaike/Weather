@@ -155,11 +155,11 @@ body {
 @media only screen and (max-width: 600px) {
   .card,
   .card2 {
-    width: 100%;
-    max-width: none;
-    border-radius: 0;
+    width: 90%;
+    max-width: 470px;
+    margin: 20px auto;
+    border-radius: 20px;
     padding: 20px;
-    margin-top: 0;
   }
 
   .search {
