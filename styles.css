@@ -23,7 +23,6 @@ body {
 
 .card2 {
   width: 100%;
-  max-width: 100%;
   margin: 0;
   text-align: center;
   background-color: #6ec2ff;
@@ -31,8 +30,7 @@ body {
   padding-top: 10%;
   padding-bottom: 10%;
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 #loading-screen {
@@ -69,9 +67,10 @@ body {
   outline: 0;
   background-color: #ebfffc;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   cursor: pointer;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -81,26 +80,26 @@ body {
 }
 
 .weather-icon {
-  width: 10px;
-  height: 10px;
+  width: 80px;
+  height: 80px;
   margin-top: 30px;
 }
 
 .weather h1 {
   margin-top: -5px;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 500;
 }
 
 .weather h2 {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 400;
 }
 
 .weather-condition {
-  margin-top: -50px;
-  font-size: 25px;
-  margin-bottom: -20px;
+  margin-top: -40px;
+  font-size: 20px;
+  margin-bottom: -10px;
 }
 
 .underline {
@@ -114,7 +113,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .col {
@@ -124,13 +123,13 @@ body {
 }
 
 .col img {
-  width: 40px;
+  width: 30px;
   margin-right: 10px;
 }
 
 .humidity,
 .wind {
-  font-size: 28px;
+  font-size: 22px;
   margin-top: -6px;
 }
 
@@ -147,5 +146,70 @@ body {
 }
 
 .text {
-  font-size: 48px;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  .search {
+    margin-bottom: 10px;
+  }
+
+  .search input {
+    height: 40px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .search button {
+    height: 40px;
+    width: 40px;
+  }
+
+  .weather-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .weather h1 {
+    font-size: 40px;
+  }
+
+  .weather h2 {
+    font-size: 25px;
+  }
+
+  .weather-condition {
+    margin-top: -30px;
+    font-size: 18px;
+    margin-bottom: -10px;
+  }
+
+  .underline {
+    margin-top: -10px;
+  }
+
+  .Extra-info {
+    margin-top: 30px;
+  }
+
+  .col img {
+    width: 20px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 30px;
+  }
 }
