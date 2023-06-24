@@ -31,6 +31,9 @@ body {
   padding: 40px 35px;
   font-family: 'Poppins', sans-serif;
 }
+.card2 p{
+  margin-top: 50px;
+}
 
 #loading-screen {
   position: fixed;
