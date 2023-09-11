@@ -14,7 +14,6 @@
          <img src="Images/clouds.png" width="300" height="300px">   
         </div>
         <h1 class="text">WEATHER</h1>
-        <p>-By CodeCrafters</p>
     </div>
     </div>
     <div class="card">
@@ -116,7 +115,8 @@
         }
       }
       searchBtn.addEventListener("click", () => {
-        CheckWeather(searchBox.value);
+        CheckWeather(searchBox.value.trim());
+        searchBox.value ="";
       });
 
       if ('serviceWorker' in navigator) {
